@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <h1>CRUD Operations using Javascript</h1>
+
+  <div class="employee-form" id="employee-form">
+    <form name="contactForm" onsubmit="event.preventDefault(); onformsubmit();  " autocomplete="off" class="employee"
+      id="form">
+      <div>
+        <label for="">Name</label>
+        <input type="text" name="Name" class="Name" id="Name" />
+      </div>
+      <div class="error" id="nameErr"></div>
+      <div>
+        <label for="">Age</label>
+        <input type="text" name="Number" class="age" id="age" />
+      </div>
+      <div class="error" id="ageErr"></div>
+      <div>
+        <label for="">Email</label>
+        <input type="text" name="Email" class="Email" id="Email" />
+      </div>
+      <div class="error" id="emailErr"></div>
+      <div>
+        <label for="">Salary</label>
+        <input type="text" name="Salary" class="Salary" id="Salary" />
+      </div>
+      <div class="error" id="salaryErr"></div>
+      <div class="on-action-buttons">
+        <input type="submit" name="Submit" class="Submit" id="Submit" value="Submit" />
+      </div>
+    </form>
+  </div>
+  <br />
+
+  <div class="Employee-table" id="Employee-table">
+    <table class="list" id="Employee-list">
+      <thead>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Email</th>
+        <th>Salary</th>
+        <th>Actions</th>
+      </thead>
+      <tbody>
+
+
+      </tbody>
+  </div>
+
+  <script src="/crud.js"></script>
+</body>
+
+</html>
